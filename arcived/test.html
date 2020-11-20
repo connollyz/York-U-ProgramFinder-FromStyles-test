@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Lucida Grande/LucidaGrande.ttf">
+        <link rel="stylesheet" href="Lucida Grande/LucidaGrandeBold.ttf">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+            integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+</head>
+<body>
+    <section class="program-finder">
+        <!-- header -->
+        <div class="programFinder-header">
+            <!-- title -->
+            <h2>Find the program<br>
+            <span>thats right for you.</span></h2>
+            <!-- link -->
+            <a class="btn btnStyle1" href="#">Skip to Academic Offerings</a>
+        </div>
+        <form action="">
+            <!-- fist slide -->
+            <fieldset id="section1">
+                <p>Complete the sentence below by selecting from the dropdown menus.</p>
+
+                <p>I have a</p>
+                <select name="BachelorDegree" id="">
+                    <option selected value="Bachelor’s Degree">Bachelor’s Degree</option>
+                </select>
+                
+                <p> my goal is to obtain a </p>
+                <select name="MasterDegree" id="">
+                    <option selected value="Master’s Degree">Master’s Degree</option>
+                </select>
+               
+                <p> and I am available to study </p>
+                <select name="anytime" id="">
+                    <option selected value="anytime">anytime</option>
+                </select>
+
+                <p>at Schulich’s </p>
+                <select name="Campus" id="">
+                    <option selected value="Main Keele Street Campus - North Toronto, Canada">Main Keele Street Campus - North Toronto, Canada</option>
+                </select>
+
+                <textarea name="optionally" id="" cols="30" rows="3" placeholder="And optionally,
+I am interested in business in general and, the possibility of …?."></textarea>
+
+                <hr>
+                <button id="continue1" class="btn btnStyle2">Continue <i class="fas fa-angle-right"></i></button>
+                
+            </fieldset>
+            <!-- second slide -->
+            <fieldset id="section2">
+                <p>You’re eligible for the following programs:</p>
+                <h3 class="programSubtitle">Program(s):</h3>
+                <!-- Eligible Programs -->
+                <div class="eligiblePrograms">
+                    <!-- Program Card -->
+                    <div class="programCard">
+                        <div class="program">
+                            <h4 class="pgName">Master of Management in Artificial Intelligence</h4>
+                            <p class="pgCode">MMAI</p>
+                        </div>
+                        <div class="programLinks">
+                            <a class="programLink btn btnStyle2" href="#">View Program Details</a>
+                            <a class="programLink btn btnStyle3" href="#">Discover Eligibility</a>
+                        </div>
+                    </div>
+                   
+                    <!-- Program Card -->
+                    <div class="programCard">
+                        <div class="program">
+                            <h4 class="pgName">Master of Business Administration</h4>
+                            <p class="pgCode">MBA</p>
+                        </div>
+                        <div class="programLinks">
+                            <a class="programLink btn btnStyle2" href="#">View Program Details</a>
+                            <a class="programLink btn btnStyle3" href="#">Discover Eligibility</a>
+                        </div>
+                    </div>
+
+                    <!-- Program Card -->
+                    <div class="programCard">
+                        <div class="program">
+                            <h4 class="pgName">International Master of Business Administration</h4>
+                            <p class="pgCode">IMBA</p>
+                        </div>
+                        <div class="programLinks">
+                            <a class="programLink btn btnStyle2" href="#">View Program Details</a>
+                            <a class="programLink btn btnStyle3" href="#">Discover Eligibility</a>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="programSubtitle">Specializations:</h3>
+                <p id="noSpecialzationsResults">No Specialzations found.</p>
+                <div id="specialzationsResults" class="specialzationsResults">
+                    <a href="#" class="btn">Test Link</a>
+                    <a href="#" class="btn">Test Link</a>
+                    <a href="#" class="btn">Test Link</a>
+                    <a href="#" class="btn">Test Link</a>
+                    <a href="#" class="btn">Test Link</a>
+                </div>
+                <hr>
+               
+                <button id="prev1" class="btn btnStyle2">Determine Your Program Eligibility <i class="fas fa-angle-right"></i></button>
+            </fieldset>
+
+        </form>
+    </section>
+   
+<script>
+    
+    const continue1 = document.getElementById('continue1')
+    continue1.addEventListener('click', function(){
+        const slide1 = document.getElementById('section1')
+        event.preventDefault()
+        slide1.style.display = "none";
+        const slide2 = document.getElementById('section2')
+        slide2.style.display = "block";
+        console.log('hi')
+    });
+    const prev1 = document.getElementById('prev1')
+        prev1.addEventListener('click', function () {
+            const slide1 = document.getElementById('section1')
+            event.preventDefault()
+            slide1.style.display = "block";
+            const slide2 = document.getElementById('section2')
+            slide2.style.display = "none";
+        });
+
+    const ns = document.getElementById('noSpecialzationsResults');
+    ns.addEventListener('click', function(){
+        const ns = document.getElementById('noSpecialzationsResults')
+        event.preventDefault()
+        ns.style.display = "none";
+        const s = document.getElementById('specialzationsResults')
+        s.style.display = "flex";
+    });
+
+    const s = document.getElementById('specialzationsResults');
+        s.addEventListener('click', function () {
+            const ns = document.getElementById('noSpecialzationsResults')
+            event.preventDefault()
+            ns.style.display = "block";
+            const s = document.getElementById('specialzationsResults')
+            s.style.display = "none";
+        });
+
+</script>
+    
+    
+</body>
+</html>

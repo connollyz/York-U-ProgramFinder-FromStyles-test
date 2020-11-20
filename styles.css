@@ -1,0 +1,262 @@
+
+/* form container */
+.program-finder__finder{
+    border: 1px solid #e2e2e2;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* container */
+.module--program-finder .program-finder__finder .program-finder__content {
+    background-color: #ffffff;
+    color: #1E5772 !important;
+}
+
+
+
+/* Title*/
+/* form header */
+.programFinder-header{
+    background: hsl(199, 58%, 28%);
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+/* form title */
+.programFinder-header h2{
+    color: #ffffff;
+    font-size: 23px;
+    margin: 0px;
+    font-family: 'LucidaGrande';
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.programFinder-header h2 span{
+    font-weight: 100;
+    font-size: 18px;;
+}
+
+/* btn styles */
+.btn{
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    padding: 15px 15px;
+    font-size: 14px;
+    min-width: 120px;
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+
+.btnStyle1:hover{
+    background-color:#7f98aa ;
+    color: #ffffff;
+}
+
+.btnStyle2:hover , .btnStyle2:focus , .btnStyle2:active{
+     background-color: #154053 ;
+    color: #ffffff;
+}
+
+.btnStyle1{
+    background: #90ACC0;
+}
+.btnStyle2{
+    background: hsl(199, 58%, 28%);
+}
+
+.btnStyle3:hover{
+    background-color: #ffffff !important ;
+    color:  #1a4d65;
+    opacity: 0.5;
+}
+
+/* Text page one */
+.formDirections{
+    color: #1d1d1d !important;
+    margin-bottom: 15px;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    display: block;
+}
+.noSF{
+    color: #8C8C8C !important;   
+}
+
+/* interactive  paragraph */
+.module--program-finder .program-finder__finder p, .module--program-finder .program-finder__finder .nl__sentence {
+    color: #1E5772;
+}
+
+/* selects field page one */
+.module--program-finder .program-finder__finder .nl__field .nl__selection {
+    color: #1E5772;
+    border-bottom: 2px solid #1E5772;
+    font-weight: bold;
+}
+
+
+.module--program-finder .program-finder__finder p, .module--program-finder .program-finder__finder .nl__sentence {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.module--program-finder .program-finder__finder .program-finder__content {
+    padding: 20px;
+    min-height: unset !important;
+}
+
+/* optional box */
+.module--program-finder .program-finder__finder .program-finder__option{
+    background-color: #fff;
+    border: 1px solid #1E5772;
+    border-radius: 3px;
+  
+}
+
+/* working on color */
+.module--program-finder .program-finder__finder .nl__highlight {
+    font-weight: bold;
+}
+.module--program-finder .program-finder__finder .program-finder__option p,
+.module--program-finder .program-finder__finder .nl__highlight {
+    color:#8C8C8C!important;
+}
+.module--program-finder .program-finder__finder .program-finder__option p{
+    display: inline-block;
+}
+
+.module--program-finder .program-finder__finder .program-finder__option{
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.module--program-finder .program-finder__finder .nl__add, .module--program-finder .program-finder__finder .nl__remove{
+    display: inline-block;
+    border: none;
+    padding: 0px;
+    line-height: 16px;
+    vertical-align: middle;
+    margin-left: 0.25rem;
+    color: #1E5772;
+    border-bottom: 2px solid #1E5772;
+    font-weight: normal;
+    border-radius: 0px;
+    opacity: .75;
+    font-size: 14px;
+}
+
+/* form footer */
+.formFooter{
+    padding: 0px 20px 20px 20px;
+}
+hr{
+    width: 92% !important
+}
+
+/* drop down  */
+.module--program-finder .program-finder__finder .nl__field {
+    display: inline;
+    position: relative;
+}
+
+.nl__options li a{
+    color: #1a4d65 !important
+}
+.nl__options li a:hover{
+    color: #ffffff !important;
+    background: #1a4d65 !important
+}
+
+/* slide 2 */
+
+/* subtitle */
+h3.h1 {
+    color: hsl(199, 58%, 28%) !important;
+    font-weight: bold !important;
+    font-size: 16px !important;
+    margin: 15px 0px;
+}
+
+
+
+/* program */
+/* programCards */
+.programCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #EDF2F5;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.program{
+    width: 70%;
+}
+
+
+
+.pgName{
+    color: hsl(199, 58%, 28%);
+    font-size: 14px;
+    margin: 0px 0px 5px 0px;
+    font-weight: bold;
+}
+
+.pgCode{
+    color: #1d1d1d;
+    font-size: 10px;
+}
+
+.programLink{
+    font-size: 10px;
+    display: block;
+    padding:  5px;
+    text-align: center;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    color: #fff;
+     border: 1px solid hsl(199, 58%, 28%)
+}
+
+.btnStyle3{
+    color: hsl(199, 58%, 28%);
+}
+
+
+
+.specialzationsResults .btn{
+    background: #90ACC0;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.specialzationsResults .btn:hover{
+     background: #7f98aa;
+     color: #ffffff;
+}
+
+
+/*  */
+ .icon--loader__container{
+    margin: 20px;
+
+} 
+#result{
+     display: none;
+}
+.specialzationsResults{
+    display: none;
+}
+#program-finder-next.btn.btnStyle2{
+    display: none ;
+}
+
+#noSpecialzationsResults{
+    display: none;
+}
