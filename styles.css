@@ -51,7 +51,7 @@
     opacity: 1;
 }
 
-.btnStyle1:hover{
+.btnStyle1:hover, .btnStyle1:focus , .btnStyle1:active{
     background-color:#7f98aa ;
     color: #ffffff;
 }
@@ -68,7 +68,7 @@
     background: hsl(199, 58%, 28%);
 }
 
-.btnStyle3:hover{
+.btnStyle3:hover, .btnStyle3:focus , .btnStyle3:active{
     background-color: #ffffff !important ;
     color:  #1a4d65;
     opacity: 0.5;
@@ -237,7 +237,9 @@ h3.h1 {
     margin-right: 10px;
 }
 
-.specialzationsResults .btn:hover{
+.specialzationsResults .btn:hover,
+.specialzationsResults .btn:active,
+.specialzationsResults .btn:focus{
      background: #7f98aa;
      color: #ffffff;
 }
