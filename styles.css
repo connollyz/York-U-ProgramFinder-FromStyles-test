@@ -154,7 +154,8 @@
     padding: 0px 20px 20px 20px;
 }
 hr{
-    width: 92% !important
+    width: 92% !important;
+    border-top: 1px solid rgba(	30, 87, 114,0.1) !important;
 }
 
 /* drop down  */
@@ -259,4 +260,28 @@ h3.h1 {
 
 #noSpecialzationsResults{
     display: none;
+}
+
+@media(max-width: 500px){
+    .programCard, .programFinder-header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .program{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.programFinder-header a{
+    margin-top: 15px;
+}
+
+.programLinks{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.programLinks a:first-child{
+    margin-right: 10px;
+}
 }
